@@ -1,0 +1,321 @@
+/* TAGS */
+
+html {
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+}
+main {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+}
+footer{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    width: 100%;
+    height: 5vh;
+    float: left;
+    padding: 0px;
+    bottom: 0px;
+    border-top: 0.3vh solid rgba(221, 168, 33, 0.8);
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+/* CLASSES */
+.image_prop{
+    filter: grayscale(100%);
+
+    animation-name: transition_img_contrair;
+    animation-duration: 1s;
+
+    background-size: cover;
+    background-position: center;
+
+    width: 20%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    float: left;
+}
+.image_prop:hover {
+    filter: grayscale(0%);
+    animation-name: transition_img_expandir;
+    animation-duration: 1s;
+    width: 100%;
+}
+.image_prop2{
+    filter: grayscale(100%);
+
+    animation-name: transition_img_contrair2;
+    animation-duration: 1s;
+
+    background-size: cover;
+    background-position: center;
+
+    width: 20%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+
+    float: left;
+}
+.image_prop2:hover {
+    filter: grayscale(100%);
+    animation-name: transition_img_expandir2;
+    animation-duration: 1s;
+    width: 100%;
+}
+.footer_prop{
+    justify-content: left;
+    display: flex;
+    height: 100%;
+    width: 14%;
+    padding: 0px;
+    margin: 0px;
+    float: left; 
+}
+.menus{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+.interno{
+    font-size: 2.5vh;
+    margin-top: 1vh;
+    margin-left: -1vw;
+    width: 50%;
+}
+
+/* ID'S*/
+
+#div_logo{
+    width: 86%;
+}
+#logo{
+    height: 10vh;
+    margin-top: -5vh;
+}
+
+/* RESPONSIVIDADE*/
+
+@media screen and (max-width: 1200px) {
+    .interno {
+        margin-top: 1vh;
+        margin-left: -1vw;
+        font-size: 2vh;
+        width: 50%;
+    }
+  }
+@media screen and (max-width: 750px) {
+    footer {
+       float: none;
+       height: 5vh;
+       justify-content: center;
+       
+    }
+    #div_logo{
+        position: absolute;
+        width: 100%;
+    }
+    .footer_prop{
+        float: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .interno{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-size: 2vh;
+        margin: 0px;
+    }
+    .image_prop2{
+        filter: grayscale(100%);
+        animation: none;
+    
+        background-size: cover;
+        background-position: center;
+    
+        width: 100%;
+        height: 19vh;
+        padding: 0px;
+        margin: 0px;
+        float: none;
+    }
+    .image_prop2:hover {
+        filter: grayscale(100%);
+        animation: none;
+        height: 19vh;
+    }
+    .image_prop{
+        filter: grayscale(100%);
+        animation: none;
+    
+        background-size: cover;
+        background-position: center;
+    
+        width: 100%;
+        height: 19vh;
+        padding: 0px;
+        margin: 0px;
+        float: none;
+    }
+    .image_prop:hover {
+        filter: grayscale(0%);
+        animation: none;
+        height: 19vh;
+    }
+    main {
+        padding: 0px;
+        margin: 0px;
+        display: block;
+    }    
+    .entrou{
+        display: flex;
+        height: 5vh;
+    }
+  }
+@media screen and (max-width: 500px) {
+
+    footer {
+       width: 100%;
+       height: 11vh;
+       justify-content: center;
+       padding: none;
+    }
+    #div_logo{
+        display: flex;
+        position: absolute;
+        width: 100%;
+    }
+    #login{
+        margin-top: 5vh;
+    }
+    .footer_prop{
+        width: 100%;
+        height: 5vh;
+        justify-content: center;
+        display: block;
+    }
+    .interno{
+        z-index: 2;
+        font-size: 2vh;
+        width: 100%;
+        height: 3vh;
+        justify-content: center;
+    }
+    .image_prop2{
+        filter: grayscale(100%);
+        animation: none;
+    
+        background-size: cover;
+        background-position: center;
+    
+        width: 100%;
+        height: 17.8vh;
+        padding: 0px;
+        margin: 0px;
+        float: none;
+    }
+    .image_prop2:hover {
+        filter: grayscale(100%);
+        animation: none;
+        height: 17.8vh;
+    }
+    .image_prop{
+        filter: grayscale(100%);
+        animation: none;
+    
+        background-size: cover;
+        background-position: center;
+    
+        width: 100%;
+        height: 19vh;
+        padding: 0px;
+        margin: 0px;
+        float: none;
+    }
+    .image_prop:hover {
+        filter: grayscale(0%);
+        animation: none;
+        height: 19vh;
+    }
+    main {
+        padding: 0px;
+        margin: 0px;
+        display: block;
+    }    
+    .entrou{
+        display: flex;
+        height: 5vh;
+    }
+  }
+/* ANIMAÇÕES */
+
+@keyframes transition_img_expandir {
+    from {
+        filter: grayscale(100%);
+        width: 20%;
+    }
+
+    to {
+        filter: grayscale(0%);
+        width: 100%;
+    }
+}
+@keyframes transition_img_contrair {
+    from {
+        filter: grayscale(0%);
+        width: 100%;
+    }
+
+    to {
+        filter: grayscale(100%);
+        width: 20%;
+    }
+}
+@keyframes transition_img_expandir2 {
+    from {
+        filter: grayscale(100%);
+        width: 20%;
+    }
+
+    to {
+        filter: grayscale(100%);
+        width: 100%;
+    }
+}
+@keyframes transition_img_contrair2 {
+    from {
+        filter: grayscale(100%);
+        width: 100%;
+    }
+
+    to {
+        filter: grayscale(100%);
+        width: 20%;
+    }
+}
+
+
+
+
