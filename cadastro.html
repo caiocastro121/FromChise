@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Caio Corrêa Castro">
+    <meta name="description" content="FromSoftware fan wiki">
+    <link rel="stylesheet" type="text/css" href="/assets/log_cad.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@900&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <main class="main cadastro">
+        <form method="get" action="login.html"> 
+            <table>
+                <caption><a href="index.html"><img class="logo" src="/assets/images/logo.png"></a></caption> 
+                <tr>
+                    <th>
+                        <img class="titulo cad" src="/assets/images/cadastro.png">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="nome_cad">Nome</label>
+                        </p>
+                        <input id="nome_cad" name="nome_cad" required="required" type="text" autocomplete="on" placeholder="ex. silva souza"/>        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>
+                            <label for="email_cad">E-mail</label>
+                        </p>
+                        <input id="email_cad" name="email_cad" required="required" type="email" autocomplete="on" placeholder="ex. exemplo@gmail.com"/>        
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <label for="senha_cad">Senha</label>
+                        </p>
+                        <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. abc123" />          
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <label for="senhac_cad">Confirmar senha</label>
+                        </p>
+                        <input id="senhac_cad" name="senhac_cad" required="required" type="password" placeholder="ex. abc123" />          
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <p>
+                            <label for="data_cad">Nascimento</label>
+                        </p>
+                        <input id="data_cad" name="data_cad" required="required" type="date" placeholder="00/00/0000" />          
+                    </td>
+                </tr>
+              
+                <tr>
+                    <td>
+                        <input class="butao cadastrar" type="submit" value="CADASTRAR"/> 
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        <p class="outra_pag">Possui uma conta? <a href="login.html">Entre aqui</a></p>
+                    </td>
+                </tr> 
+            </table>
+        </form>
+    </main>
+</body>
+</html>
