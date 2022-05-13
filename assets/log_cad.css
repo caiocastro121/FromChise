@@ -1,0 +1,206 @@
+* {
+    padding: 0px;
+    margin: auto;
+    text-decoration: none;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(49, 57, 104);
+}
+
+table {
+    width: 45vw;
+    padding-top: 3vh;
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+}
+
+input {
+    text-align: center;
+
+    border: 2px solid white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+
+    margin-left: 15%;
+    width: 70%;
+    height: 30px;
+    margin-top: 0.3vh;
+}
+
+p {
+    margin-top: 1vh;
+    font-size: 2vh;
+    margin-left: 15%;
+    width: 70%;
+}
+
+/* log classes */
+.outra_pag {
+    text-align: center;
+}
+
+.titulo {
+    margin-bottom: 5vh;
+}
+
+.titulo.cad {
+    height: 4vh;
+}
+
+.titulo.log {
+    height: 5vh;
+}
+
+.butao {
+    margin-top: 5vh;
+    margin-bottom: 0px;
+}
+
+.butao.entrar {
+    margin-left: 35%;
+    height: 40px;
+    width: 30%;
+}
+
+.butao.cadastrar {
+    margin-left: 30%;
+    height: 40px;
+    width: 40%;
+}
+
+.butao.cadastrar:hover,
+.butao.entrar:hover {
+    cursor: pointer;
+    color: black;
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 0px white;
+}
+
+.main {
+    border: 0.3vh solid rgba(221, 168, 33, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 45vw;
+    box-shadow: 1px 1px 0px black;
+}
+
+.main.cadastro {
+    height: 80vh;
+    margin-top: 10vh;
+}
+
+.main.login {
+    height: 65vh;
+    margin-top: 15vh;
+
+}
+
+.logo {
+    margin-top: -9vh;
+    height: 16vh;
+}
+
+/* outros */
+::placeholder {
+    color: white;
+    font-size: large;
+}
+
+/*responsividade 970w 790h*/
+@media screen and (max-width: 970px) {
+
+    .butao{
+        font-size: 0.6em;
+    }
+    .butao.cadastrar{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .butao.entrar{
+        width: 20%;
+        margin-left: 40%;
+    }
+
+    .main.cadastro {
+        width: 70vw;
+    }
+
+    .main.login {
+        width: 70vw;
+    }
+
+    input{
+        margin: 0px;
+        width: 100%;
+    }
+    p{
+        margin-left: 0px;
+        width: 100%;
+    }
+    table{
+        width: 70vw;
+    }
+}
+
+@media screen and (max-height:790px) {
+
+    .titulo {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 970px),
+(max-height:790px) {
+
+    input {
+        border: 1px solid white;
+    }
+
+    ::placeholder {
+        font-size: smaller;
+    }
+}
+
+/*responsividade 650w 600h*/
+@media screen and (max-width: 650px) {
+    .main.cadastro {
+        border: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    .main.login {
+        border: 0px;
+        width: 100vw;
+        height: 100vh;
+    }
+    body{
+        background-color: black;
+    }
+}
+
+@media screen and (max-height:600px) {
+
+    .main.cadastro {
+        height: 100vh;
+        margin-top: 0px;
+    }
+    .main.login {
+        height: 100vh;
+        margin-top: 0px;
+    }
+    .logo {
+        margin-top: 6vh;
+    }
+}
+
+/*responsividade 350w 460h*/
+
+@media screen and (max-height:460px) {
+    .main{
+        overflow-y: scroll;
+    }
+}
